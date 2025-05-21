@@ -1,0 +1,108 @@
+/*
+Theme Name: Choco Deluxe
+Theme URI: https://chocodeluxe.com
+Author: Your Name
+Author URI: https://yourwebsite.com
+Description: Premium WordPress theme for chocolate shop
+Version: 1.0
+Text Domain: choco-deluxe
+*/
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #3a1f04;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Navigation */
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu li {
+    margin-left: 2rem;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: #d4a76a;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Chocolate Types */
+.chocolate-types {
+    padding: 4rem 0;
+    background-color: #f9f5f0;
+}
+
+.type-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #3a1f04;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}

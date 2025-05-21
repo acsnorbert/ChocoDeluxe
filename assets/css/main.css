@@ -1,0 +1,57 @@
+/* Hero Section */
+.hero {
+    background-color: #2c1a0a;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 0;
+    background-color: #f9f5f0;
+}
+
+/* Chocolate Types */
+.chocolate-types {
+    padding: 4rem 0;
+}
+
+.type-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.type-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Chocolate Menu */
+.chocolate-menu {
+    background-color: #f9f5f0;
+    padding: 4rem 0;
+}
+
+.menu-item {
+    margin-bottom: 2rem;
+}
+
+/* Gallery */
+.gallery {
+    padding: 4rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .type-column {
+        flex: 100%;
+    }
+}

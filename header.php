@@ -10,8 +10,7 @@
     <header>
         <div class="container">
             <nav class="main-navigation">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
-                    <h1>Choco deluxe</h1>
+                <a href="<?php echo esc_url(home_url('Chockodeluxelogowhite.png')); ?>" class="logo">
                 </a>
                 <?php
                 wp_nav_menu(array(

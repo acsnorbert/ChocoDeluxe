@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <nav class="main-navigation">
-                <a href="<?php echo esc_url(home_url('Chockodeluxelogowhite.png')); ?>" class="logo">
+                <a> <img src="<?php echo get_template_directory_uri(); ?>/Képek/Chockodeluxelogowhite.png" class="logo" alt="Logo">
                 </a>
                 <?php
                 wp_nav_menu(array(

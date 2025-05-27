@@ -25,9 +25,14 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #3a1f04;
+    background-color:black;
+
     color: white;
+    
     padding: 1rem 0;
+}
+.logo {
+    width: 12vw;
 }
 
 /* Navigation */
@@ -39,9 +44,24 @@ header {
 
 .main-menu {
     display: flex;
+    flex-direction: row;
     list-style: none;
 }
+.torzs{
+    display: flex;
+    flex-direction: row !important;
+    margin-left: 5%;
+    margin-right: 5%;
 
+}
+.jobb{
+    width: 30vw;
+}
+.bal img{
+
+    width: 40vw;
+    height: 40vh;
+}
 .main-menu li {
     margin-left: 2rem;
 }
@@ -59,10 +79,11 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: url('assets/images/hero-bg.jpg');
+    background-image: url('./Képek/BORITASKEP.jpg');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    font-family: 'Montserrat';
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;

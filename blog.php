@@ -4,6 +4,7 @@ get_header(); ?>
 
 <main id="primary" class="site-main">
     <div class="container">
+
         <h1 class="page-title"><?php the_title(); ?></h1>
 
         <?php
@@ -16,35 +17,39 @@ get_header(); ?>
 
         $query = new WP_Query($args);
 
-        if ($query->have_posts()) :
-            while ($query->have_posts()) : $query->the_post(); ?>
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    
-                    <div class="post-excerpt">
-                        <?php the_excerpt(); ?>
-                    </div>
-                    <div class="post-meta">
-                       
-                        <span><?php the_author(); ?></span>
-                    </div>
-                </article>
-            <?php endwhile; ?>
+        if ($query->have_posts()) : ?>
+            <div class="posts-row">
+                <?php
+                    $post_count = 0;
+                    while ($query->have_posts()) : $query->the_post();
+                        $post_count++;
+                        
+                        $post_class = ($post_count <= 3) ? 'post-main-item' : 'post-small-item';
+                    ?>
+                        <article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
+                            <h2 class="abackground"><a href="<?php the_permalink(); ?>" class="bejegyzesek"><?php the_title(); ?></a></h2>
+                            
+                        </article>
+                    <?php endwhile; ?>
+                </div>
+            </div>
 
             <div class="pagination">
                 <?php
                 echo paginate_links(array(
-                    'total' => $query->max_num_pages
+                    'total' => $query->max_num_pages,
+                    'current' => $paged,
                 ));
                 ?>
             </div>
 
         <?php else : ?>
             <p>Nincsenek elérhető bejegyzések.</p>
-        <?php endif;
-
+        <?php
+        endif;
         wp_reset_postdata();
         ?>
+
     </div>
 </main>
 

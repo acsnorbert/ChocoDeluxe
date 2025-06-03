@@ -25,11 +25,14 @@ get_header(); ?>
                         $post_count++;
                         
                         $post_class = ($post_count <= 3) ? 'post-main-item' : 'post-small-item';
+                        $H2_class = ($post_count <= 3) ? 'abackground': 'Sbackground' ;
                     ?>
-                        <article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
-                            <h2 class="abackground"><a href="<?php the_permalink(); ?>" class="bejegyzesek"><?php the_title(); ?></a></h2>
-                            
-                        </article>
+                        <a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
+                            <article>
+                                <h2 <?php post_class($H2_class); ?>><p  class="bejegyzesek"><?php the_title(); ?></p></h2>
+                                
+                            </article>
+                        </a>
                     <?php endwhile; ?>
                 </div>
             </div>

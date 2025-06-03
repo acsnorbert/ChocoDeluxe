@@ -8,7 +8,15 @@
 .entry-header, .entry-content, .entry-footer {
     margin-bottom: 1.5rem;
 }
-
+.entry-header{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.entry-title{
+    position: absolute;
+    font-size: 4rem;
+}
 .post-thumbnail img {
     max-width: 100%;
     height: auto;
@@ -19,3 +27,17 @@
     font-size: 0.9rem;
     color: #777;
 }
+#submit{
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #fbe8d7;
+    border-radius: 40px;
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+}
+#submit:hover{
+    scale: 105%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+

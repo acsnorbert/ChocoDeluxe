@@ -30,3 +30,10 @@ function choco_deluxe_scripts() {
     wp_enqueue_script('choco-deluxe-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'choco_deluxe_scripts');
+
+function load_single_css() {
+    if ( is_single() ) {
+        wp_enqueue_style( 'single-style', get_template_directory_uri() . '/single.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'load_single_css' );

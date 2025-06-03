@@ -1,0 +1,21 @@
+.single-post {
+    padding: 2rem;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.entry-header, .entry-content, .entry-footer {
+    margin-bottom: 1.5rem;
+}
+
+.post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.entry-meta {
+    font-size: 0.9rem;
+    color: #777;
+}

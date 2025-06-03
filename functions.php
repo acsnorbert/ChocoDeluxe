@@ -37,3 +37,10 @@ function load_single_css() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'load_single_css' );
+
+function yourtheme_enqueue_blog_styles() {
+    if (is_page_template('blog.php')) {  
+        wp_enqueue_style('blog-style', get_template_directory_uri() . '/blog.css', array(), '1.0', 'all');
+    }
+}
+add_action('wp_enqueue_scripts', 'yourtheme_enqueue_blog_styles');

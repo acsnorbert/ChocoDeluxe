@@ -11,6 +11,8 @@
 }
 h1{
     text-align: center;
+    text-decoration: underline;
+    font-size: 4rem;
 }
 a{
     
@@ -48,6 +50,9 @@ a{
 }
 .Sbackground{
     text-decoration: underline #ffffff;
+    background-color: #4d0c20;
+    opacity: 70%;
+    border-radius: 20px;
     
     
     

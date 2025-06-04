@@ -1,5 +1,10 @@
-<?php get_header(); ?>
-
+<?php
+/*
+Template Name: Rólunk
+Template Post Type: page
+*/
+get_header();
+?>
 <main class="homepage">
 
   <section class="hero" style="text-align: center; padding: 50px;">

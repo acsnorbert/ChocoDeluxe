@@ -44,17 +44,17 @@ get_header();
     <h2>Fejlesztők</h2>
     <div style="display: flex; justify-content: center; gap: 40px; margin-top: 20px;">
       <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/Képek/Névtelen.png" alt="Ács Benjámin" style="width: 150px; border-radius: 50%;">
+        <img src="<?php echo get_template_directory_uri(); ?>/Képek/Névtelen.png" alt="Ács Benjámin" style="width: 200px; height: 350px; border-radius: 20%;">
         <p><strong>Ács Benjámin</strong></p>
         <p>fn</p>
       </div>
       <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/Képek/Image.jpg" alt="Felencsity Miklós" style="width: 150px; border-radius: 50%;">
+        <img src="<?php echo get_template_directory_uri(); ?>/Képek/Image.jpg" alt="Felencsity Miklós" style="width: 200px;height: 350px; border-radius: 20%;">
         <p><strong>Jelencsity Miklós</strong></p>
         <p>Rep warrior fn</p>
       </div>
       <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/Képek/Névtelen1.png" alt="Ács Norbert" style="width: 150px; border-radius: 50%;">
+        <img src="<?php echo get_template_directory_uri(); ?>/Képek/Névtelen1.png" alt="Ács Norbert" style="width: 200px;height: 350px; border-radius: 20%;">
         <p><strong>Ács Norbert</strong></p>
         <p>fn</p>
       </div>

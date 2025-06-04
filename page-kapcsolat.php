@@ -22,19 +22,7 @@ get_header();
 </head>
 <body <?php body_class(); ?>>
 
-        <div class="container">
-            <nav class="main-navigation">
-            <a> <img src="<?php echo get_template_directory_uri(); ?>/dark-2562840_1280.jpg"  class="logo" alt="Logo">
-                </a>
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'container' => false,
-                    'menu_class' => 'main-menu',
-                ));
-                ?>
-            </nav>
-        </div>
+       
 
   <style>
     body {

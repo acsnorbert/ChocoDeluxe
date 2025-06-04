@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <nav class="main-navigation">
-                <a> <img src="<?php echo get_template_directory_uri(); ?>/Képek/Chockodeluxelogowhite.png" class="logo" alt="Logo">
+                <a href="http://localhost/wordpress/"> <img src="<?php echo get_template_directory_uri(); ?>/Képek/Chockodeluxelogowhite.png" class="logo" alt="Logo">
                 </a>
                 <?php
                 wp_nav_menu(array(

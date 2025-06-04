@@ -10,13 +10,85 @@ Text Domain: choco-deluxe
 
 /* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
-
+/* Gyár szekció - kép + szöveg egymás mellett */
+.gyar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 80px;
+    flex-wrap: wrap; /* Mobilbarát */
+    background-color: #fff;
+    align-items: flex-start;
+    height: 100%;
+  }
+  
+  /* Szöveges rész jobbra */
+  .rightgyar {
+    max-width: 400px;
+    text-align: center;
+    margin-top: -3%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Címsor (ha van) */
+  .rightgyar h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Bekezdés */
+  .rightgyar p {
+    font-size: x-large;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Gomb formázása */
+  .button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid black;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Csokiképek szekció */
+  .random3kep {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 80px;
+    flex-wrap: wrap; /* Mobilra optimalizálva */
+    background-color: #fff;
+  }
+  
+  .random3kep img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .random3kep img:hover {
+    transform: scale(1.05);
+  }
+  
 .container {
     width: 90%;
     max-width: 1200px;

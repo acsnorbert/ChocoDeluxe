@@ -1,10 +1,16 @@
+body{
+    width: 100%;
+    padding: 0px;
+}
 .single-post {
-    padding: 2rem;
+    
     
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
-
+main{
+    padding: 20px;
+}
 .entry-header, .entry-content, .entry-footer {
     margin-bottom: 1.5rem;
 }
@@ -12,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    background: none;
 }
 .entry-title{
     position: absolute;
@@ -19,8 +26,11 @@
 }
 .post-thumbnail img {
     max-width: 100%;
+    min-height: 200px;
     height: auto;
-    border-radius: 8px;
+    border: #fbe8d7 2px solid;
+    background-size: cover;
+    border-radius: 10px;
 }
 
 .entry-meta {
@@ -30,14 +40,80 @@
 #submit{
     height: 40px;
     width: 150px;
-    border: none;
+    
     background-color: #fbe8d7;
     border-radius: 40px;
     cursor: pointer;
     transition:0.3s ease-in-out;
+    border: #6e0f2d 2px solid;
 }
 #submit:hover{
     scale: 105%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
+.nav-previous, .nav-next{
+     width: 180px;
+    background-color: #f2f4ea;
+    border-radius: 10px;
+    margin: 5px ;
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+    border: #6e0f2d 2px solid;
+}
+.nav-previous:hover, .nav-next:hover{
+    scale: 105%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+ }
 
+a{
+    text-decoration: none;
+    color: #6e0f2d;
+}
+a:visited{
+    text-decoration: none;
+}
+.logged-in-as{
+    color: #6e0f2d;
+}
+#comment{
+    background-color: #f2f4ea;
+    border: #6e0f2d 2px solid;
+    border-radius: 10px;
+    transition:0.3s ease-in-out;
+    width: 70%;
+}
+#comment:focus{
+    scale: 105%;
+}
+.comment-form-comment{
+    height: 200px;        
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+label{
+    color: #771b38;
+}
+#reply-title{
+    color: #570720;
+}
+#comments{
+    color: #570720;
+}
+.comment-meta{
+    text-align: left;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .entry-title{
+
+        font-size: 2rem;
+    }
+    #submit{
+        height: 80px;
+        width: 300px;
+        
+    }
+  }

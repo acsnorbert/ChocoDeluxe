@@ -29,6 +29,7 @@ get_header(); ?>
                         $H2_class = ($post_count <= 3) ? 'abackground': 'Sbackground' ;
                         $p_class = ($post_count <= 3) ? 'bejegyzesek': 'Aejegyzesek' ;
                     ?>
+                        
                         <a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?> style="background-image: url('<?php echo esc_url($thumb_url); ?>');" >
                             <article  >
                                 

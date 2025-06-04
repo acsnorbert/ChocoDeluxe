@@ -21,12 +21,16 @@ main{
     background: none;
 }
 .entry-title{
+    background-color: #c4899c;
+    border-radius: 20px;
+    opacity: 90%;
     position: absolute;
     font-size: 4rem;
 }
 .post-thumbnail img {
     max-width: 100%;
     min-height: 200px;
+    max-height: 600px;
     height: auto;
     border: #fbe8d7 2px solid;
     background-size: cover;
@@ -102,7 +106,13 @@ label{
 }
 .comment-meta{
     text-align: left;
+    background: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    height: 10vh;
+    
 }
+
 
 
 

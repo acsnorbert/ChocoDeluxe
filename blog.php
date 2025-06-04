@@ -21,7 +21,13 @@ get_header(); ?>
             <div class="posts-row">
                 <?php
                     $post_count = 0;
+                    $args = array(
+                        'post_type'      => 'post',
+                        'posts_per_page' => 7, 
+                        'paged'          => get_query_var('paged') ? get_query_var('paged') : 1
+                    );
                     
+                    $query = new WP_Query($args);
                     while ($query->have_posts()) : $query->the_post();
                         $post_count++;
                         $thumb_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
